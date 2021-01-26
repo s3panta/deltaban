@@ -5,7 +5,7 @@
             <h2>Where would you like <br> to go ?</h2>
         </div>
         <v-col cols="12" sm="6">
-            <v-text-field v-model="last" label="Last Name" solo-inverted append-icon="mdi-magnify">
+            <v-text-field v-model="last" label="Search" solo-inverted append-icon="mdi-magnify">
             </v-text-field>
         </v-col>
 <!-- //////////////////////////////Category//////////////////////////////// -->
