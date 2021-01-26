@@ -1,51 +1,51 @@
 <template>
-  
-        <div class="cards">
-            <div class="slider">
-                <VueSlickCarousel v-bind="settings">
-                    <div>
-                        <div class="img_box">
-                            <img src="../../assets/maldive.jpg" alt="...">
-                            <div class="img_title">
-                                <p>Maldive</p>
-                            </div>
-                        </div>
 
-                    </div>
-                    <div>
-                        <div class="img_box">
-                            <img src="../../assets/istanbul.jpg" alt="...">
-                            <div class="img_title">
-                                <p>Italy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img_box">
-                            <img src="../../assets/italy.jpg" alt="...">
-                            <div class="img_title">
-                                <p>Canada</p>
-                            </div>
+    <div class="cards">
+        <div class="slider">
+            <VueSlickCarousel v-bind="settings">
+                <div>
+                    <div class="img_box">
+                        <img src="../../assets/maldive.jpg" alt="...">
+                        <div class="img_title">
+                            <p>Maldive</p>
                         </div>
                     </div>
 
-                </VueSlickCarousel>
+                </div>
+                <div>
+                    <div class="img_box">
+                        <img src="../../assets/istanbul.jpg" alt="...">
+                        <div class="img_title">
+                            <p>Italy</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img_box">
+                        <img src="../../assets/italy.jpg" alt="...">
+                        <div class="img_title">
+                            <p>Canada</p>
+                        </div>
+                    </div>
+                </div>
 
-            </div>
+            </VueSlickCarousel>
+
         </div>
+    </div>
 </template>
 
 <script>
-  import VueSlickCarousel from 'vue-slick-carousel'
+    import VueSlickCarousel from 'vue-slick-carousel'
     import 'vue-slick-carousel/dist/vue-slick-carousel.css'
     // optional style for arrows & dots
     import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
-export default {
+    export default {
         components: {
             VueSlickCarousel
         },
-         data() {
+        data() {
             return {
                 settings: {
                     "dots": false,
@@ -56,7 +56,7 @@ export default {
                     "slidesToShow": 2,
                     "slidesToScroll": 3,
                     "touchThreshold": 5,
-                    
+
                     "centerPadding": "20px",
                     "swipeToSlide": true,
                     "rtl": false,
@@ -90,11 +90,10 @@ export default {
                 },
             }
         },
-}
+    }
 </script>
 
 <style scoped>
-
     .cards {
         margin-top: 30px;
         margin-bottom: 60px;
@@ -119,24 +118,27 @@ export default {
         left: 5px;
         color: #EEEEEE;
     }
-                @media only screen and (max-width: 1940px) {
+
+    @media only screen and (max-width: 1940px) {
         .img_box>img {
             width: 450px;
-        height: 500px;
+            height: 500px;
 
         }
     }
-            @media only screen and (max-width: 1024px) {
+
+    @media only screen and (max-width: 1024px) {
         .img_box>img {
             width: 350px;
-        height: 400px;
+            height: 400px;
 
         }
     }
-        @media only screen and (max-width: 600px) {
+
+    @media only screen and (max-width: 600px) {
         .img_box>img {
             width: 200px;
-        height: 250px;
+            height: 250px;
 
         }
     }
@@ -148,7 +150,8 @@ export default {
 
         }
     }
-        @media only screen and (max-width: 320px) {
+
+    @media only screen and (max-width: 320px) {
         .img_box>img {
             width: 150px;
             height: 200px;

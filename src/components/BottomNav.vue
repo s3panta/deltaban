@@ -1,5 +1,5 @@
 <template>
-    <v-bottom-navigation v-model="value" background-color="#FFFFFF" dark shift class="BottomNav" >
+    <v-bottom-navigation v-model="value" background-color="#FFFFFF" dark shift class="BottomNav">
         <v-btn>
             <v-icon color="teal darken-4">mdi-home</v-icon>
         </v-btn>
@@ -44,16 +44,16 @@
             right: null,
         }),
         computed: {
-           
+
         },
     }
 </script>
 
 <style scoped>
-.BottomNav{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+    .BottomNav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 </style>

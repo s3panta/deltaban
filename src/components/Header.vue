@@ -1,6 +1,6 @@
 <template>
     <div class="top_bar">
-
+<!-- //////////////////////////////HambergurBtn&Avatar//////////////////////////////// -->
         <v-container class="fill-height">
             <v-row align="center" justify="space-between">
                 <v-btn icon color="teal darken-4" @click.stop="drawer = !drawer">
@@ -12,7 +12,7 @@
 
             </v-row>
         </v-container>
-
+<!-- //////////////////////////////Drawer//////////////////////////////// -->
         <v-navigation-drawer v-model="drawer" absolute temporary>
             <v-list-item>
                 <v-list-item-avatar>
@@ -86,7 +86,8 @@
         padding-right: 30px;
         background-color: #EEEEEE;
     }
-    #avatar{
+
+    #avatar {
         border-radius: 10%;
     }
 </style>

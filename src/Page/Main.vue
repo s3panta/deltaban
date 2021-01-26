@@ -1,5 +1,6 @@
 <template>
     <div class="main_container">
+<!-- //////////////////////////////top-text&textField//////////////////////////////// -->
         <div class="Top_Text">
             <h2>Where would you like <br> to go ?</h2>
         </div>
@@ -7,6 +8,7 @@
             <v-text-field v-model="last" label="Last Name" solo-inverted append-icon="mdi-magnify">
             </v-text-field>
         </v-col>
+<!-- //////////////////////////////Category//////////////////////////////// -->
         <div class="Category">
             <div class="Title">
                 <h3>Category</h3>
@@ -18,7 +20,6 @@
                             <v-icon>mdi-map-legend</v-icon>
                         </v-btn>
                     </div>
-
                     <p style="color:#004D40;">Places</p>
                 </div>
                 <div class="Category_Cards_Box">
@@ -27,7 +28,6 @@
                             <v-icon>mdi-airplane-takeoff</v-icon>
                         </v-btn>
                     </div>
-
                     <p>Flight</p>
                 </div>
                 <div class="Category_Cards_Box">
@@ -36,7 +36,6 @@
                             <v-icon>mdi-city-variant-outline</v-icon>
                         </v-btn>
                     </div>
-
                     <p>Hotels</p>
                 </div>
                 <div class="Category_Cards_Box">
@@ -45,13 +44,13 @@
                             <v-icon>mdi-bowl-mix</v-icon>
                         </v-btn>
                     </div>
-
                     <p>Foods</p>
                 </div>
 
             </div>
         </div>
-        <Slick/>
+<!-- //////////////////////////////SlickSlider//////////////////////////////// -->
+        <Slick />
 
     </div>
 </template>
@@ -62,9 +61,6 @@
         components: {
             Slick
         },
-
-       
-
     }
 </script>
 
@@ -85,9 +81,11 @@
         align-items: center;
         color: #004D40;
     }
-.Title{
-color: #004D40;
-}
+
+    .Title {
+        color: #004D40;
+    }
+
     .Category {
 
         margin-left: 20px;
@@ -131,5 +129,4 @@ color: #004D40;
     .bluecolor {
         background-color: #004D40 !important;
     }
-
 </style>
